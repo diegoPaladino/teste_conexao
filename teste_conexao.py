@@ -7,10 +7,11 @@ import time
 
 #declarations
 st = Speedtest()
+# resultado_1 = st.download()/1000000
 
 def job():
-    print('Velocidade de Download:',st.download())
-    print('Velocidade de Upload:',st.upload())
+    print('Velocidade de Download:',st.download()/1000000)
+    print('Velocidade de Upload:',st.upload()/1000000)
 
 
 #execution
